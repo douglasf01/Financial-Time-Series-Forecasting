@@ -1,0 +1,24 @@
+[project]
+name = "fts"
+version = "0.1.0"
+description = "TMS088 Financial Time Series project: gap interpolation and 200-day forecasts for seven price series"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "statsmodels",
+    "scikit-learn",
+    "arch",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["fts"]
